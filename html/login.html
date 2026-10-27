@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | OutreachHub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <main class="auth-container">
+        <section class="auth-card">
+            <img src="../html/assests/images/logo.png"
+                 alt="OutreachHub Logo"
+                 width="70" height="70">
+
+            <h1>Welcome Back</h1>
+            <p>Sign in to your OutreachHub account.</p>
+
+            <form id="loginForm" action="../html/dashboard.html">
+                <label for="username">Username:</label>
+                <input type="text" id="username"
+                       name="username" required
+                       placeholder="Enter your Username">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email"
+                       name="email" required
+                       placeholder="Enter your email">
+
+                <label for="password">Password:</label>
+                <input type="password" id="password"
+                       name="password" required
+                       placeholder="Enter your password">
+
+                <button type="submit">Login</button>
+                <p id="loginMessage" role="status"></p>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

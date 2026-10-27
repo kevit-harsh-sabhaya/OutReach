@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Contact List</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="../dashboard.html" class="logo">
+        <img
+          src="../assests/images/logo.png"
+          alt=""
+          height="70px"
+          width="70px"
+        />
+      </a>
+
+      <nav class="nav-links">
+        <div class="nav-menu">
+          <a href="../dashboard.html">Dashboard</a>
+          <a href="../contact/contacts-main.html">Contacts</a>
+          <a href="#">Template</a>
+          <a href="#">Campaign</a>
+        </div>
+
+        <form action="../login.html">
+          <button type="submit" class="logout-btn">Logout</button>
+        </form>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="contacts-main">
+        <div class="contacts-main-1">
+          <p>CONTACTS</p>
+        </div>
+        <div class="contacts-main-2">
+          <p>Manages and organizes all your contacts.</p>
+        </div>
+      </section>
+      <section class="contact-search">
+        <input type="search" placeholder="Search contacts..." />
+
+        <select class="filter">
+          <option value="">Filter</option>
+          <option value="name">Name</option>
+          <option value="email">Email</option>
+          <option value="company">Company</option>
+        </select>
+
+        <button class="contact-search-btn">Search</button>
+      </section>
+      <br />
+      <section>
+        <form action="../contact/contacts-edit.html">
+          <button class="add-contact-btn">+ Add Contact</button>
+        </form>
+      </section>
+
+      <section class="Contact-list">
+        <div class="contact-list-header">
+          <h2>Contact List</h2>
+        </div>
+
+        <div class="contact-list-table">
+          <table class="contact-table">
+            <thead class="contact-table-header">
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Company</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody class="contact-table-body">
+              <tr>
+                <td>Harsh</td>
+                <td>harsh@ex.com</td>
+                <td>ABC ltd.</td>
+                <td>
+                  <a href="../contact/contacts-detail.html" class="view-btn"
+                    >View</a
+                  >
+                  <a href="../contact/contacts-edit.html" class="edit-btn"
+                    >Edit</a
+                  >
+                  <form action="">
+                    <button type="submit" class="delete-btn">Delete</button>
+                  </form>
+                </td>
+              </tr>
+              <tr>
+                <td>Krish</td>
+                <td>krish@ex.com</td>
+                <td>XYZ Corp.</td>
+                <td>
+                  <a href="../contact/contacts-detail.html" class="view-btn"
+                    >View</a
+                  >
+                  <a href="../contact/contacts-edit.html" class="edit-btn"
+                    >Edit</a
+                  >
+                  <form action="">
+                    <button type="submit" class="delete-btn">Delete</button>
+                  </form>
+                </td>
+              </tr>
+              <tr>
+                <td>Ajay</td>
+                <td>ajay@ex.com</td>
+                <td>PQR ltd.</td>
+                <td>
+                  <a href="../contact/contacts-detail.html" class="view-btn"
+                    >View</a
+                  >
+                  <a href="../contact/contacts-edit.html" class="edit-btn"
+                    >Edit</a
+                  >
+                  <form action="">
+                    <button type="submit" class="delete-btn">Delete</button>
+                  </form>
+                </td>
+              </tr>
+              <tr>
+                <td>Aayush</td>
+                <td>aayush@ex.com</td>
+                <td>DEF Inc.</td>
+                <td>
+                  <a href="../contact/contacts-detail.html" class="view-btn"
+                    >View</a
+                  >
+                  <a href="../contact/contacts-edit.html" class="edit-btn"
+                    >Edit</a
+                  >
+                  <form action="">
+                    <button type="submit" class="delete-btn">Delete</button>
+                  </form>
+                </td>
+              </tr>
+              <tr>
+                <td>Hariom</td>
+                <td>hariom@ex.com</td>
+                <td>ABC ltd.</td>
+                <td>
+                  <a href="../contact/contacts-detail.html" class="view-btn"
+                    >View</a
+                  >
+                  <a href="../contact/contacts-edit.html" class="edit-btn"
+                    >Edit</a
+                  >
+                  <form action="">
+                    <button type="submit" class="delete-btn">Delete</button>
+                  </form>
+                </td>
+              </tr>
+              <tr>
+                <td>Yash</td>
+                <td>yash@ex.com</td>
+                <td>PQR ltd.</td>
+                <td>
+                  <a href="../contact/contacts-detail.html" class="view-btn"
+                    >View</a
+                  >
+                  <a href="../contact/contacts-edit.html" class="edit-btn"
+                    >Edit</a
+                  >
+                  <form action="">
+                    <button type="submit" class="delete-btn">Delete</button>
+                  </form>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <nav class="pagination">
+        <button><< Previous</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>Next >></button>
+      </nav>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <div class="footer-brand">
+          <h2>SANIDHYA</h2>
+        </div>
+
+        <div class="footer-info">
+          <nav class="footer-nav">
+            <a href="../dashboard.html">Home</a>
+            <a href="contacts-main.html">Conatct</a>
+            <a href="#">Template</a>
+            <a href="#">Campaign</a>
+            <a href="#">Support</a>
+          </nav>
+
+          <p class="copyright">© 2468 Sanidhya. All right reserved.</p>
+        </div>
+      </div>
+
+      <div class="footer-contact">
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f">Facebook</i>
+          </a>
+          <a href="#" aria-label="Twitter">
+            <i class="fa-brands fa-twitter">Twitter</i>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <i class="fa-brands fa-youtube">YouTube</i>
+          </a>
+          <a href="#" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp">WhatsApp</i>
+          </a>
+        </div>
+
+        <p>
+          Support:
+          <a href="mailto:sanidhya@gmail.com"> sanidhya@gmail.com </a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

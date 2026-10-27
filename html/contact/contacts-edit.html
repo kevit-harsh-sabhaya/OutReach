@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Update Details</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <a href="../dashboard.html" class="logo">
+        <img
+          src="../assests/images/logo.png"
+          alt=""
+          height="70px"
+          width="70px"
+        />
+      </a>
+    </header>
+
+    <main class="container">
+      <section class="contact-details-card-sec">
+        <div class="card-sec-head">
+          <h2>Update Details</h2>
+        </div>
+
+        <div class="edit-form">
+          <form id="contact-form" action="contacts-detail.html" method="get">
+            <div class="form-group">
+              <label for="name">Name : </label>
+              <input type="text" id="name" name="name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email : </label>
+              <input type="email" id="email" name="email" />
+            </div>
+
+            <div class="form-cmp">
+              <label for="company">Company :</label>
+              <input type="text" id="company" name="company" />
+            </div>
+
+            <div class="form-buttons">
+              <button type="submit" class="edit-save">Save</button>
+            </div>
+          </form>
+          <form action="contacts-detail.html">
+            <button type="submit" class="edit-delete">Cancel</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <div class="footer-brand">
+          <h2>SANIDHYA</h2>
+        </div>
+
+        <div class="footer-info">
+          <nav class="footer-nav">
+            <a href="../html/dashboard.html">Home</a>
+            <a href="../html/contact/contacts-main.html">Conatct</a>
+            <a href="#">Template</a>
+            <a href="#">Campaign</a>
+            <a href="#">Support</a>
+          </nav>
+
+          <p class="copyright">© 2468 Sanidhya. All right reserved.</p>
+        </div>
+      </div>
+
+      <div class="footer-contact">
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f">Facebook</i>
+          </a>
+          <a href="#" aria-label="Twitter">
+            <i class="fa-brands fa-twitter">Twitter</i>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <i class="fa-brands fa-youtube">YouTube</i>
+          </a>
+          <a href="#" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp">WhatsApp</i>
+          </a>
+        </div>
+
+        <p>
+          Support:
+          <a href="mailto:sanidhya@gmail.com"> sanidhya@gmail.com </a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
