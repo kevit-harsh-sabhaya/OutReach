@@ -1,0 +1,47 @@
+// =====================================================
+//  Buttons (all pages)
+// =====================================================
+@use "../abstracts" as *;
+
+// Primary: base lime
+.edit-save,
+.contact-edit-btn,
+.add-contact-btn { @include btn; }
+
+// Header logout
+.logout-btn { @include btn($accent, $lime-shade-90, $lime-tint-40, $lime-shade-90); }
+
+// Dark green
+.contact-search-btn { @include btn($lime-shade-60, $white, $lime-shade-40, $white); }
+
+// Secondary: light tint
+.contact-back-btn,
+.edit-delete { @include btn($lime-tint-50, $lime-shade-80, $lime-tint-30, $lime-shade-90); }
+
+// Danger
+.contact-dlt-btn { @include btn($danger, $white, $danger-dark, $white); }
+
+// Small table action buttons
+.view-btn   { @include btn($lime-tint-50, $lime-shade-80, $lime-tint-30, $lime-shade-90); padding: 0.3rem 0.8rem; }
+.edit-btn   { @include btn($lime-shade-30, $white, $lime-shade-50, $white);               padding: 0.3rem 0.8rem; }
+.delete-btn { @include btn($danger, $white, $danger-dark, $white);                         padding: 0.3rem 0.8rem; }
+
+// Pagination
+.pagination {
+  @include flex(row, center, center, 0.4rem);
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+
+  button {
+    padding: 0.45rem 0.9rem;
+    font: inherit;
+    color: $lime-shade-70;
+    background: $white;
+    border: 1px solid $lime-tint-30;
+    border-radius: $radius-sm;
+    cursor: pointer;
+    transition: background $transition, color $transition;
+
+    &:hover { background: $accent; color: $lime-shade-90; border-color: $accent; }
+  }
+}

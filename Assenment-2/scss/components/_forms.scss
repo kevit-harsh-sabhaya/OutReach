@@ -1,0 +1,27 @@
+// =====================================================
+//  Forms (edit contact + search bar)
+// =====================================================
+@use "../abstracts" as *;
+
+.contact-search {
+  @include flex(row, flex-start, center, 0.75rem);
+  flex-wrap: wrap;
+
+  input[type="search"],
+  .filter { @include input-field($white); }
+
+  input[type="search"] { flex: 1; min-width: 200px; }
+}
+
+.edit-form {
+  .form-group,
+  .form-cmp {
+    @include flex(column, flex-start, stretch, 0.3rem);
+    margin-bottom: 1rem;
+
+    label { font-weight: 600; color: $lime-shade-70; }
+    input { @include input-field; }
+  }
+
+  .form-buttons { display: inline-block; }
+}

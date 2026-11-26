@@ -1,0 +1,22 @@
+// =====================================================
+//  OutreachHub  |  main.scss  (compile this file only)
+//  sass scss/main.scss html/style.css
+// =====================================================
+
+// Base
+@use "base/base";
+
+// Layout
+@use "layout/header";
+@use "layout/footer";
+
+// Components
+@use "components/buttons";
+@use "components/tables";
+@use "components/forms";
+@use "components/cards";
+
+// Pages
+@use "pages/login";
+@use "pages/dashboard";
+@use "pages/contacts";

@@ -1,0 +1,84 @@
+// =====================================================
+//  Mixins
+// =====================================================
+@use "variables" as *;
+
+@mixin flex($dir: row, $justify: flex-start, $align: stretch, $gap: 0) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+@mixin card {
+  background: $bg-card;
+  border: 1px solid $border-color;
+  border-radius: $radius;
+  box-shadow: $shadow;
+}
+
+// Solid button: fill / text / hover fill / hover text
+@mixin btn($bg: $accent, $color: $lime-shade-90, $hover-bg: $accent-hover, $hover-color: $lime-shade-90) {
+  display: inline-block;
+  padding: 0.55rem 1.1rem;
+  font: inherit;
+  font-weight: 600;
+  text-decoration: none;
+  color: $color;
+  background: $bg;
+  border: 0;
+  border-radius: $radius-sm;
+  cursor: pointer;
+  transition: background $transition, color $transition, transform $transition;
+
+  &:hover {
+    background: $hover-bg;
+    color: $hover-color;
+    transform: translateY(-1px);
+  }
+}
+
+// Text input / select with lime focus ring
+@mixin input-field($bg: $lime-tint-90) {
+  padding: 0.65rem 0.8rem;
+  font: inherit;
+  border: 1px solid $lime-tint-30;
+  border-radius: $radius-sm;
+  background: $bg;
+  transition: border-color $transition, box-shadow $transition;
+
+  &:focus {
+    outline: none;
+    border-color: $lime-shade-30;
+    box-shadow: 0 0 0 3px rgba($accent, 0.35);
+  }
+}
+
+@mixin table-style {
+  width: 100%;
+  border-collapse: collapse;
+  background: $bg-card;
+
+  th, td {
+    padding: 0.7rem 1rem;
+    text-align: left;
+  }
+
+  thead {
+    background: $bg-table-head;
+    color: $white;
+  }
+
+  tbody tr {
+    border-bottom: 1px solid $border-color;
+    transition: background $transition;
+
+    &:nth-child(even) { background: $bg-row-alt; }
+    &:hover           { background: $lime-tint-60; }
+  }
+}
+
+@mixin respond($bp) {
+  @media (max-width: $bp) { @content; }
+}

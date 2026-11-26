@@ -1,0 +1,40 @@
+// =====================================================
+//  Footer
+// =====================================================
+@use "../abstracts" as *;
+
+.footer {
+  @include flex(row, space-between, flex-start, 2rem);
+  flex-wrap: wrap;
+  padding: 2rem;
+  background: $bg-footer;
+  color: $lime-tint-70;
+  border-top: 3px solid $accent;
+
+  .footer-brand h2 { margin: 0 0 0.5rem; color: $accent; letter-spacing: 3px; }
+
+  .footer-nav {
+    @include flex(row, flex-start, center, 1.25rem);
+    flex-wrap: wrap;
+
+    a { color: $lime-tint-60; text-decoration: none; &:hover { color: $accent; } }
+  }
+
+  .copyright { margin: 0.75rem 0 0; font-size: 0.85rem; color: $lime-tint-30; }
+
+  .footer-contact {
+    p { margin: 0.75rem 0 0; }
+    a { color: $lime-tint-40; &:hover { color: $accent; } }
+  }
+
+  .social-icons {
+    @include flex(row, flex-start, center, 1rem);
+    flex-wrap: wrap;
+
+    a { text-decoration: none; font-size: 0.9rem; i { font-style: normal; } }
+  }
+}
+
+@include respond(700px) {
+  .footer { flex-direction: column; }
+}

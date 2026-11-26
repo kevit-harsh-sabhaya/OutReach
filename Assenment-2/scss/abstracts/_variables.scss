@@ -1,0 +1,56 @@
+// =====================================================
+//  Variables  |  Palette: "Luxurious Lime" (base #89f336)
+// =====================================================
+
+// ---------- Shades (base -> darker) ----------
+$lime-base:      #89f336;
+$lime-shade-10:  #7bdb31;
+$lime-shade-20:  #6ec22b;
+$lime-shade-30:  #60aa26;
+$lime-shade-40:  #529220;
+$lime-shade-50:  #457a1b;
+$lime-shade-60:  #376116;
+$lime-shade-70:  #294910;
+$lime-shade-80:  #1b310b;
+$lime-shade-90:  #0e1805;
+
+// ---------- Tints (base -> lighter) ----------
+$lime-tint-10:   #95f44a;
+$lime-tint-20:   #a1f55e;
+$lime-tint-30:   #acf772;
+$lime-tint-40:   #b8f886;
+$lime-tint-50:   #c4f99b;
+$lime-tint-60:   #d0faaf;
+$lime-tint-70:   #dcfbc3;
+$lime-tint-80:   #e7fdd7;
+$lime-tint-90:   #f3feeb;
+
+// ---------- Neutrals / feedback ----------
+$white:          #ffffff;
+$danger:         #d64545;
+$danger-dark:    #b53030;
+$danger-light:   #fdeaea;
+
+// ---------- Semantic tokens ----------
+$bg-page:        $lime-tint-90;
+$bg-card:        $white;
+$bg-header:      $lime-shade-90;
+$bg-footer:      $lime-shade-80;
+$bg-table-head:  $lime-shade-60;
+$bg-row-alt:     $lime-tint-80;
+
+$text-main:      $lime-shade-90;
+$text-muted:     $lime-shade-60;
+$text-on-dark:   $lime-tint-80;
+
+$accent:         $lime-base;
+$accent-hover:   $lime-shade-20;
+$border-color:   $lime-tint-40;
+
+// ---------- Layout tokens ----------
+$radius:         10px;
+$radius-sm:      6px;
+$shadow:         0 4px 14px rgba($lime-shade-80, 0.12);
+$shadow-hover:   0 8px 22px rgba($lime-shade-80, 0.2);
+$transition:     0.25s ease;
+$max-width:      1200px;
